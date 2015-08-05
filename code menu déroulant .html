@@ -1,0 +1,41 @@
+Le plugin jQuery Dropdown permet de faire de jolis menus déroulants.
+
+Il suffit de modifier une barre de navigation pour ajouter un menu déroulant (voir figure suivante) : 
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+          <li> <a href="#">Accueil</a> </li>
+          <li> <a href="#">Liens</a> </li>
+          <li class="dropdown"> 
+            <a data-toggle="dropdown" href="#">Témoignages<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dompteurs</a></li>
+              <li><a href="#">Zoos</a></li>
+              <li><a href="#">Chasseurs</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Autres témoignages</a></li>
+            </ul>
+          </li>
+          <li> <a href="#">Références</a> </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+Il a fallu ajouter quelques classes mais le résultat est très réussi !
+
+Voyons ça de plus près : pour ajouter la fonctionnalité de dropdown, il faut utiliser la classe dropdown et ajouter data-toggle="dropdown" dans la balise concernée pour que le menu fonctionne. 
+Ici, je l'ai fait pour la balise <a> qui contient le libellé du lien du menu.
+Il faut aussi utiliser la classe dropdown-menu dans la balise <ul> qui doit englober le menu déroulant.
+
