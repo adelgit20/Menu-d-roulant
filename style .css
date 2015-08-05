@@ -1,0 +1,18 @@
+La classe navbar est toute simple :  
+
+    .navbar {
+         position: relative;
+         min-height: 50px;
+         margin-bottom: 20px;
+         border: 1px solid transparent;
+             }       
+           
+ Une hauteur fixée à 50 pixels, une petite marge basse pour bien distinguer la barre du reste de la page, une bordure fine et une position relative. 
+ La classe navbar-default fixe les couleurs du fond et de la bordure : 
+ 
+      .navbar-default {
+              background-color: #f8f8f8;
+              border-color: #e7e7e7;
+                      }   
+                      
+                      
